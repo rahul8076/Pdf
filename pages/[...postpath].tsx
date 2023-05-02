@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://pdfsir.rf.gd/graphql` + encodeURI(path as string)
+					`https://pdfsir.rf.gd/` + encodeURI(path as string)
 				}`,
 			},
 		};
